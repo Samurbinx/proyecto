@@ -1,0 +1,10 @@
+mat-toolbar {
+    background-color: rgba(19, 67, 107, 0.801);
+}
+.menu-icon {
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
