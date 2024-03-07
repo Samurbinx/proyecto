@@ -9,7 +9,7 @@
   margin: auto;
 }
 
-
+ 
 .card {
   min-height: fit-content;
   height: 500px;
@@ -31,6 +31,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  text-align: justify;
+
 }
 mat-card-header {
   display: flex;

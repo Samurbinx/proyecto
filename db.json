@@ -1,100 +1,170 @@
 {
-    "users": [
-        {
-            "email": "sam@gmail.com",
-            "nombre": "Samuel",
-            "apellidos": "Urbina",
-            "telefono": "987387798",
-            "token": "1234" 
-        },
-        {
-            "email": "ale@gmail.com",
-            "nombre": "Alejandra",
-            "apellidos": "Quirós",
-            "telefono": "938774329",
-            "token": "1234" 
-        }
-    ],
-    "places": [
-        {
-            "id": 0,
-            "nombre": "Torre de Hércules",
-            "descripcion": "La Torre de Hércules es una torre y faro situado sobre una colina en la península de la ciudad de La Coruña, en Galicia (España). Su altura total es de 55 metros. Data de finales del siglo i y principios del siglo ii. Tiene el privilegio de ser el único faro romano y el más antiguo en funcionamiento del mundo. Es el tercer faro en altura de España, por detrás del faro de Chipiona (62 m s. n. m.) y del faro de Maspalomas (60 m s. n. m.). El 27 de junio de 2009 fue declarado Patrimonio de la Humanidad por la Unesco. Hasta el siglo xx recibía el nombre de Faro de Brigantia, o en latín Farum Brigantium.",
-            "puntuacion": 4.7,
-            "imagenes": ["../../assets/places/torre/1.jpg","../../assets/places/torre/2.jpg","../../assets/places/torre/3.jpg","../../assets/places/torre/4.jpg"],
-            "opiniones": ["Mu bonico","sisi"]
-        },
-        {
-            "id": 1,
-            "nombre": "Aquarium Finisterrae",
-            "descripcion": "El Aquarium Finisterrae, llamado popularmente Casa de los Peces, es un centro interactivo situado en la ciudad de La Coruña dedicado a la divulgación científica sobre aspectos relacionados con la biología marina, la oceanografía y el mar en general. Pretende promover el conocimiento del océano y educar en actitudes positivas hacia el medio acuático, así como contribuir al conocimiento científico de la vida marina.Está ubicado en la costa coruñesa, en el Paseo Marítimo, entre la Domus y la Torre de Hércules, que puede verse desde el acuario. Sus piscinas exteriores están conectadas con el Océano Atlántico y están diseñadas con un sistema que las hace sensibles a las mareas. Además de sus piscinas y acuarios, contiene varios módulos interactivos. Desde su apertura en 1999, ha recibido más de 6 millones de visitantes.",
-            "puntuacion": 4.4,
-            "imagenes": ["../../assets/places/aquarium/1.png","../../assets/places/aquarium/2.jpg","../../assets/places/aquarium/3.jpg","../../assets/places/aquarium/4.png"],
-            "opiniones": [""]
-        },
-        {
-            "id": 2,
-            "nombre": "Monte de San Pedro",
-            "descripcion": "Este parque era antiguamente un punto defensivo reconvertido para el disfrute de los ciudadanos y turistas desde el año 1999. Cuenta con una extensión de más de 90.000 metros cuadrados en el que se pueden realizar todo tipo de hobbies. Podrás desde volar una cometa hasta tumbarte en la hierba o contemplar el atardecer. Además, cuenta con un gran aliciente turístico que son las dos piezas Vickers de más de 17 metros de altitud que fueron adquiridas en 1929 e instaladas en 1933.",
-            "puntuacion": 4.7,
-            "imagenes": ["../../assets/places/monte/1.jpg","../../assets/places/monte/2.jpg"],
-            "opiniones": [""]
-        },
-        {
-            "id": 3,
-            "nombre": "Museo Domus",
-            "descripcion": "La Domus, anteriormente conocida como Casa del Hombre, es un museo de carácter científico ubicado en el paseo marítimo de la ciudad de La Coruña (Galicia, España). Es el primer museo interactivo que trata de una forma global y monográfica el ser humano. Fue inaugurado el 7 de abril de 1995,1 siendo alcalde Francisco Vázquez, y forma parte de la institución municipal Museos Científicos Coruñeses a la que también pertenecen la Casa de las Ciencias y el Aquarium Finisterrae.",
-            "puntuacion": 4.4,
-            "imagenes": ["../../assets/places/domus/1.png","../../assets/places/domus/2.jpg","../../assets/places/domus/3.jpg","../../assets/places/domus/4.jpg","../../assets/places/domus/5.jpg","../../assets/places/domus/6.jpg"],
-            "opiniones": [""]
-        },
-        {
-            "id": 4,
-            "nombre": "Castelo de Santo Antón",
-            "descripcion": "El castillo de San Antón es un castillo del siglo xvi que formó parte, junto con el Castillo de Santa Cruz y el Castillo de San Diego, de una red estratégica de castillos y baterías para defender la ciudad de La Coruña, en la comunidad autónoma de Galicia, España. Fue declarado Monumento Histórico Artístico en 1949 y desde 1994 ha pasado a ser considerado como un Bien de Interés Cultural con categoría de Monumento.Desde su inauguración en 1968, alberga el Museo Arqueológico e Histórico de La Coruña.2​",
-            "puntuacion": 4.5,
-            "imagenes": ["../../assets/places/castelo/1.jpg","../../assets/places/castelo/2.jpg","../../assets/places/castelo/3.jpg","../../assets/places/castelo/4.jpg","../../assets/places/castelo/5.jpg"],
-            "opiniones": [""]
-        },
-        {
-            "id": 5,
-            "nombre": "Museo Nacional de Ciencia e Tecnología",
-            "descripcion": "",
-            "puntuacion": 5,
-            "imagenes": [],
-            "opiniones": [""]
-        },
-        {
-            "id": 6,
-            "nombre": "Praza de María Pita",
-            "descripcion": "",
-            "puntuacion": 6,
-            "imagenes": [],
-            "opiniones": [""]
-        },
-        {
-            "id": 7,
-            "nombre": "Fine Arts Museum",
-            "descripcion": "",
-            "puntuacion": 7,
-            "imagenes": [],
-            "opiniones": [""]
-        },
-        {
-            "id": 8,
-            "nombre": "Praia de Riazor",
-            "descripcion": "",
-            "puntuacion": 8,
-            "imagenes": [],
-            "opiniones": [""]
-        }
-    ],
-    "opiniones":[
-        {
-            "usuario": "sam",
-            "lugar": "Torre de Hércules",
-            "puntuacion": 4.5,
-            "descripcion": "mu shulo"
-        }
-    ]
+  "users": [
+    {
+      "id": "b1de",
+      "email": "sam",
+      "nombre": "sam",
+      "apellidos": "samurbinx@gmail.com",
+      "telefono": "sam",
+      "contraseña": "sam"
+    },
+    {
+      "id": "7ea2",
+      "email": "samfds",
+      "nombre": "samsdfa",
+      "apellidos": "samurdfgsabinx@gmail.com",
+      "telefono": "samsdf",
+      "contraseña": "samsdf"
+    }
+  ],
+  "places": [
+    {
+      "id": 0,
+      "nombre": "Torre de Hércules",
+      "descripcion": "La Torre de Hércules es una torre y faro situado sobre una colina en la península de la ciudad de La Coruña, en Galicia (España). Su altura total es de 55 metros. Data de finales del siglo i y principios del siglo ii. Tiene el privilegio de ser el único faro romano y el más antiguo en funcionamiento del mundo. Es el tercer faro en altura de España, por detrás del faro de Chipiona (62 m s. n. m.) y del faro de Maspalomas (60 m s. n. m.). El 27 de junio de 2009 fue declarado Patrimonio de la Humanidad por la Unesco. Hasta el siglo xx recibía el nombre de Faro de Brigantia, o en latín Farum Brigantium.",
+      "puntuacion": 4.7,
+      "imagenes": [
+        "../../assets/places/torre/1.jpg",
+        "../../assets/places/torre/2.jpg",
+        "../../assets/places/torre/3.jpg",
+        "../../assets/places/torre/4.jpg"
+      ],
+      "opiniones": [
+        "Mu bonico",
+        "sisi"
+      ]
+    },
+    {
+      "id": 1,
+      "nombre": "Aquarium Finisterrae",
+      "descripcion": "El Aquarium Finisterrae, llamado popularmente Casa de los Peces, es un centro interactivo situado en la ciudad de La Coruña dedicado a la divulgación científica sobre aspectos relacionados con la biología marina, la oceanografía y el mar en general. Pretende promover el conocimiento del océano y educar en actitudes positivas hacia el medio acuático, así como contribuir al conocimiento científico de la vida marina.Está ubicado en la costa coruñesa, en el Paseo Marítimo, entre la Domus y la Torre de Hércules, que puede verse desde el acuario. Sus piscinas exteriores están conectadas con el Océano Atlántico y están diseñadas con un sistema que las hace sensibles a las mareas. Además de sus piscinas y acuarios, contiene varios módulos interactivos. Desde su apertura en 1999, ha recibido más de 6 millones de visitantes.",
+      "puntuacion": 4.4,
+      "imagenes": [
+        "../../assets/places/aquarium/1.png",
+        "../../assets/places/aquarium/2.jpg",
+        "../../assets/places/aquarium/3.jpg",
+        "../../assets/places/aquarium/4.png"
+      ],
+      "opiniones": [
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Monte de San Pedro",
+      "descripcion": "Este parque era antiguamente un punto defensivo reconvertido para el disfrute de los ciudadanos y turistas desde el año 1999. Cuenta con una extensión de más de 90.000 metros cuadrados en el que se pueden realizar todo tipo de hobbies. Podrás desde volar una cometa hasta tumbarte en la hierba o contemplar el atardecer. Además, cuenta con un gran aliciente turístico que son las dos piezas Vickers de más de 17 metros de altitud que fueron adquiridas en 1929 e instaladas en 1933.",
+      "puntuacion": 4.7,
+      "imagenes": [
+        "../../assets/places/monte/1.jpg",
+        "../../assets/places/monte/2.jpg"
+      ],
+      "opiniones": [
+        ""
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Museo Domus",
+      "descripcion": "La Domus, anteriormente conocida como Casa del Hombre, es un museo de carácter científico ubicado en el paseo marítimo de la ciudad de La Coruña (Galicia, España). Es el primer museo interactivo que trata de una forma global y monográfica el ser humano. Fue inaugurado el 7 de abril de 1995,1 siendo alcalde Francisco Vázquez, y forma parte de la institución municipal Museos Científicos Coruñeses a la que también pertenecen la Casa de las Ciencias y el Aquarium Finisterrae.",
+      "puntuacion": 4.4,
+      "imagenes": [
+        "../../assets/places/domus/1.png",
+        "../../assets/places/domus/2.jpg",
+        "../../assets/places/domus/3.jpg",
+        "../../assets/places/domus/4.jpg",
+        "../../assets/places/domus/5.jpg",
+        "../../assets/places/domus/6.jpg"
+      ],
+      "opiniones": [
+        ""
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Castelo de Santo Antón",
+      "descripcion": "El castillo de San Antón es un castillo del siglo xvi que formó parte, junto con el Castillo de Santa Cruz y el Castillo de San Diego, de una red estratégica de castillos y baterías para defender la ciudad de La Coruña, en la comunidad autónoma de Galicia, España. Fue declarado Monumento Histórico Artístico en 1949 y desde 1994 ha pasado a ser considerado como un Bien de Interés Cultural con categoría de Monumento.Desde su inauguración en 1968, alberga el Museo Arqueológico e Histórico de La Coruña.2​",
+      "puntuacion": 4.5,
+      "imagenes": [
+        "../../assets/places/castelo/1.jpg",
+        "../../assets/places/castelo/2.jpg",
+        "../../assets/places/castelo/3.jpg",
+        "../../assets/places/castelo/4.jpg",
+        "../../assets/places/castelo/5.jpg"
+      ],
+      "opiniones": [
+        ""
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Museo Nacional de Ciencia e Tecnología",
+      "descripcion": "El Museo Nacional de Ciencia y Tecnología (MUNCYT) es una red museística española dedicada a la divulgación científica y tecnológica y a la conservación. Posee una colección de más de 15000 instrumentos científicos que datan desde el siglo xvi hasta la actualidad. Depende del Ministerio de Ciencia, Innovación y Universidades, a través de la Secretaría General de Investigación, y está gestionada por la Fundación Española para la Ciencia y la Tecnología (FECYT). Forma parte de la Red de Museos de España y la Red de Museos de Ciencia, Tecnología e Innovación; además, es miembro de la European Network os Science Centres and Museums.",
+      "puntuacion": 4.6,
+      "imagenes": [
+        "../../assets/places/muncyt/1.jpg",
+        "../../assets/places/muncyt/2.jpg",
+        "../../assets/places/muncyt/3.jpg",
+        "../../assets/places/muncyt/4.jpg",
+        "../../assets/places/muncyt/5.jpg"
+      ],
+      "opiniones": [
+        ""
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "Praza de María Pita",
+      "descripcion": "Plaza céntrica de la ciudad de A Coruña, dedicada a la heroína María Pita, proyectada a mediados del siglo XIX y donde se encuentra el Ayuntamiento.Forma un gran rectángulo de más de 10.000 metros cuadrados, en uno de cuyos frentes se encuentra el Palacio Municipial, mientras que en el resto se alinean edificios porticados, bajo los cuales se encuentran diversos establecimientos.",
+      "puntuacion": 4.6,
+      "imagenes": [
+        "../../assets/places/praza/1.png",
+        "../../assets/places/praza/2.jpg",
+        "../../assets/places/praza/3.jpg",
+        "../../assets/places/praza/4.jpg"
+      ],
+      "opiniones": [
+        ""
+      ]
+    },
+    {
+      "id": 7,
+      "nombre": "Museo de Bellas Artes",
+      "descripcion": "El Museo de Bellas Artes de La Coruña (oficialmente y en gallego: Museo de Belas Artes da Coruña) es un museo de Bellas Artes localizado en la ciudad de La Coruña que tiene su sede en un moderno edificio de Manuel Gallego Jorreto que recupera parte del antiguo convento de las Capuchinas.",
+      "puntuacion": 4.6,
+      "imagenes": [
+        "../../assets/places/bella/1.jpg",
+        "../../assets/places/bella/2.jpg",
+        "../../assets/places/bella/3.jpg",
+        "../../assets/places/bella/4.jpg",
+        "../../assets/places/bella/5.jpg",
+        "../../assets/places/bella/6.jpg"
+      ],
+      "opiniones": [
+        ""
+      ]
+    },
+    {
+      "id": 8,
+      "nombre": "Praia de Riazor",
+      "descripcion": "La playa de Riazor es una playa urbana de la ciudad de La Coruña (Galicia, España), situada en la Ensenada del Orzán. Cuenta con la Bandera Azul, distinción otorgada a las playas con las mejores condiciones ambientales e instalaciones. Su continuación hacia el noreste es la playa del Orzán. Está en frente del hotel Riazor.",
+      "puntuacion": 4.6,
+      "imagenes": [
+        "../../assets/places/praia/1.jpg",
+        "../../assets/places/praia/2.jpg",
+        "../../assets/places/praia/3.jpg",
+        "../../assets/places/praia/4.jpg"
+      ],
+      "opiniones": [
+        ""
+      ]
+    }
+  ],
+  "opiniones": [
+    {
+      "usuario": "sam",
+      "lugar": "Torre de Hércules",
+      "puntuacion": 4.5,
+      "descripcion": "mu shulo"
+    }
+  ]
 }

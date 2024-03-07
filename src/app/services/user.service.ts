@@ -10,6 +10,9 @@ export class UserService {
 
   private URL_API = 'http://localhost:3000';
 
+  private loggedIn: boolean = false;
+  private currentUser: any;
+
   constructor(private _http: HttpClient) { }
 
   addUser(user: UserModel): Observable<UserModel> {
@@ -26,5 +29,26 @@ export class UserService {
 
   deleteUser(id: number): Observable<any> {
     return this._http.delete(`${this.URL_API}/users/${id}`);
+  }
+
+  logout(): void {
+    // Limpia los datos del usuario y establece loggedIn en falso
+    this.loggedIn = false;
+    this.currentUser = null;
+    localStorage.removeItem('currentUser');
+  }
+
+  isLoggedIn(): boolean {
+    // Comprueba si el usuario ha iniciado sesión
+    return this.loggedIn;
+  }
+
+  getCurrentUser(): any {
+    // Devuelve los datos del usuario actualmente autenticado
+    return this.currentUser;
+  }
+
+  getUserName(): string {
+    return this.currentUser;
   }
 }

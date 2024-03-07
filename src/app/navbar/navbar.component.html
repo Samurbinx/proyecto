@@ -2,11 +2,11 @@
     <button mat-icon-button class="menu-icon">
       <mat-icon>menu</mat-icon>
     </button>
-    <span><a href="home">A CORUÑA</a></span>
+    <span><a href="/home">A CORUÑA</a></span>
     <div>
-      <button *ngIf="" mat-flat-button color="accent" class="menuButton">Salir</button>
-      <button *ngIf="" mat-flat-button color="accent" class="menuButton" routerLink="login">Entrar</button>
-      <button *ngIf="" mat-flat-button color="primary" class="menuButton" routerLink="reg">Registrarse</button>
+      <button *ngIf="!isLoggedIn" mat-flat-button color="accent" class="menuButton" routerLink="/registro">Registro</button>
+      <button *ngIf="!isLoggedIn" mat-flat-button color="accent" class="menuButton" routerLink="/login">Login</button>
+      <button *ngIf="isLoggedIn" mat-flat-button color="primary" class="menuButton" >Salir "username"</button>
   </div>
   </mat-toolbar>
   

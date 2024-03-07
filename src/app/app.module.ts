@@ -18,6 +18,21 @@ import { FooterComponent } from './footer/footer.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { HomeComponent } from './home/home.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatOptionModule } from '@angular/material/core';
+import { RegistroComponent } from './registro/registro.component';
+import { FormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatSnackBarModule } from '@angular/material/snack-bar';  
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -29,6 +44,7 @@ import { HomeComponent } from './home/home.component';
     DetalleComponent,
     CabeceraComponent,
     HomeComponent,
+    RegistroComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +55,22 @@ import { HomeComponent } from './home/home.component';
     MatIconModule,
     MatGridListModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatOptionModule,
+    FormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatSnackBarModule,
+    ReactiveFormsModule,
+    MatDialogModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
