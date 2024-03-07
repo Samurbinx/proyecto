@@ -36,6 +36,7 @@ export class RegistroComponent {
         this._userService.addUser(userData).subscribe({
           next: (val: any) => {
             alert("perfe");
+            
           },
           error: console.log
         });
