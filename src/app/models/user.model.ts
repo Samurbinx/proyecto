@@ -5,8 +5,9 @@ export class UserModel{
         public nombre: string,
         public apellidos: string,
         public telefono: string,
-        public contraseña: string
-        // public token: string    
+        public pwd: string,
+        public role: string,
+        public token: string    
     ){}
 
    

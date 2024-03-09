@@ -1,27 +1,49 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../services/user.service';
+import { Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
+import { SharedService } from '../shared/shared.service';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
-  isLoggedIn: boolean = false;
-  userName: string = '';
+export class NavbarComponent implements OnInit{
 
-  constructor(private _userService: UserService) { }
+  firstname: string = "";
+  isAdmin: boolean = false;
 
-  ngOnInit(): void {
-    // Verifica si el usuario ha iniciado sesión
-    this.isLoggedIn = this._userService.isLoggedIn();
-    if (this.isLoggedIn) {
-      this.userName = this._userService.getUserName();
+  constructor (private _cookieService: CookieService, private _router: Router, private _sharedService: SharedService){}
+
+  ngOnInit(){
+    this.getLoggedFirstName();
+  }
+
+  // Si hay token en una cooki, devuelve true y guarda el nombre de usuario. Si no, devuelve false
+  getLoggedFirstName(): boolean {
+
+    // Lee el token de la cookie y extrae el nombre de usuario
+    let token: string = this._cookieService.get('token');  
+    
+    if (!token)
+      return false;
+    else
+    {
+      let tokenPayload = JSON.parse(atob(token.split('.')[1]));
+      this.firstname = tokenPayload.nombre; 
+
+      if (tokenPayload.role === "administrador")
+        this.isAdmin = true;
+
+      return true;
     }
   }
 
-  logout() {
-    this._userService.logout();
-    this.isLoggedIn = false;
+  // Elimina la cookie y muestra la página de Inicio
+  logout(){
+    this._cookieService.delete('token',"/");   
+    this._sharedService.openSnackBar("La sesión se ha cerrado correctamente.");
+    this.isAdmin = false;
   }
+
 }

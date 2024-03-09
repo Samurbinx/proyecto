@@ -1,8 +1,19 @@
 mat-toolbar {
-    background-color: rgba(19, 67, 107, 0.801);
-}
-.menu-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     color: white;
+}
+/* .menuButton1 {
+    border: 1px solid rgb(255, 255, 255);
+} */
+span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+button {
+    margin-right: 20px;
 }
 a {
     text-decoration: none;

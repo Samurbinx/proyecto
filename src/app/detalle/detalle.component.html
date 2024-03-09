@@ -1,10 +1,91 @@
-<!-- <mat-grid-list cols="4" rowHeight="100px">
-    @for (tile of tiles; track tile) {
-      <mat-grid-tile
-        [colspan]="tile.cols"
-        [rowspan]="tile.rows"
-        [style.background]="tile.color">{{tile.text}}</mat-grid-tile>
-    }
-</mat-grid-list> -->
+<div class="body">
+  <div *ngIf="place" class="content">
+    <div class="cabecera"><h1>{{ place.nombre }}</h1></div>
 
-<h2></h2>
+    <div class="cuerpo">
+        <div class="desc">
+            {{ place.descripcion[0] }}
+            
+            <h2>Historia</h2>
+            {{ place.descripcion[1] }}
+        </div>
+
+        <div class="imagenes">
+            <mat-grid-list cols="2" rowHeight="250px">
+                <mat-grid-tile *ngFor="let img of place.imagenes; let i = index" [colspan]="tiles[i].cols" [rowspan]="tiles[i].rows" [style.background-image]="'url(' + img + ')'">
+                </mat-grid-tile>
+            </mat-grid-list>
+
+            <div class="pts">
+				<span *ngIf="!place || place.puntuacion === 0">
+                    <p>NV</p>
+                    <mat-icon aria-hidden="false" aria-label="Star" class="star-empty">grade</mat-icon>
+                </span>
+                <span *ngIf="place && place.puntuacion > 0">
+                    <p>{{ place.puntuacion }}</p>
+                    <mat-icon aria-hidden="false" aria-label="Star"  class="star-empty"
+                            *ngFor="let _ of [1,2,3,4,5]; let i = index" 
+                              [ngClass]="{'star-filled': i < place.puntuacion}">
+                      grade
+                    </mat-icon>
+                </span>
+                <span>
+                  <p *ngIf="reviews && reviews.length > 0">{{reviews.length}} Reseñas</p>
+                  <p *ngIf="!reviews || reviews.length === 0">0 Reseñas</p>
+                </span>
+            </div>
+        </div>  
+    </div>
+
+      
+    <hr>
+
+    
+    
+
+    <div class="cuerpo2">
+		<div *ngIf="!getLoggedFirstName()">
+			<button mat-fab extended color="primary" routerLink="/login">
+				<mat-icon>edit</mat-icon>Escribir una reseña
+			</button>
+		</div>
+
+		<div *ngIf="getLoggedFirstName()">
+			<form *ngIf="getLoggedFirstName" [formGroup]="resenia" (ngSubmit)="publicar()" class="review">
+				<p><b>{{firstname}}</b></p>  
+
+				<mat-form-field>
+					<mat-label>Puntuación</mat-label>
+					<mat-select formControlName="puntuacion" required>
+						<mat-option [value]=0>0</mat-option>
+						<mat-option [value]=1>1</mat-option>
+						<mat-option [value]=2>2</mat-option>
+						<mat-option [value]=3>3</mat-option>
+						<mat-option [value]=4>4</mat-option>
+						<mat-option [value]=5>5</mat-option>
+					</mat-select>
+				</mat-form-field>
+
+				<mat-form-field>
+					<mat-label>Cuéntanos más sobre tu experiencia</mat-label>
+					<textarea matInput formControlName="desc" required></textarea>
+				</mat-form-field>
+				<button mat-fab extended color="primary" type="submit">Publicar</button>
+			</form>
+		</div>
+
+		<div class="opiniones">
+			<div class="op" *ngFor="let review of reviews">
+				<p><b> {{review.userEmail}} </b></p>
+				<span *ngFor="let _ of [1,2,3,4,5]; let i = index">
+				<mat-icon aria-hidden="false" aria-label="Star" class="star-empty"
+							[ngClass]="{'star-filled': i < review.puntos}">
+					grade
+				</mat-icon>
+				</span>
+				<p> {{review.descripcion}} </p>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>

@@ -4,7 +4,7 @@ export class PlaceModel{
         public id: number,
         public nombre: string,
         public descripcion: string,
-        public puntuacion: string,
+        public puntuacion: number,
         public imagenes: Array<URL>,
         public opiniones: Array<string>
     ){}

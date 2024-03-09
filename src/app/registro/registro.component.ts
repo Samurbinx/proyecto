@@ -2,7 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { UserService } from '../services/user.service';
 import { UserModel } from '../models/user.model';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registro',
@@ -12,35 +12,38 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class RegistroComponent {
   registroForm: FormGroup;
 
-  constructor(private _userService: UserService, private _fb: FormBuilder){
+  constructor(private _userService: UserService, private _fb: FormBuilder, private router: Router){
     this.registroForm = this._fb.group({
-      nombre: [''],
-      apellidos: [''],
-      email: [''],
-      telefono: [''],
-      contraseña: ['']
+      nombre: ['', Validators.required],
+      apellidos: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      telefono: ['', Validators.required],
+      pwd: ['', Validators.required]
     });
   }
 
   submitForm() {
     if (this.registroForm.valid) {
       let userData: UserModel = new UserModel(  
+        this.registroForm.value.email,
         this.registroForm.value.nombre,
         this.registroForm.value.apellidos,
-        this.registroForm.value.email,
         this.registroForm.value.telefono,
-        this.registroForm.value.contraseña,
+        this.registroForm.value.pwd,
+        "usuario",
+        "pwd"
       );
 
       
         this._userService.addUser(userData).subscribe({
           next: (val: any) => {
-            alert("perfe");
-            
+            this.router.navigate(['/login']);
           },
           error: console.log
         });
       
-      } 
+      } else {
+        console.log("error falta cozas");
+      }
   }
 }

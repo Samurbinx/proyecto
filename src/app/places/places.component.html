@@ -9,14 +9,26 @@
       <div  style="background-image: url({{place.imagenes[0]}}) ;" class="img"></div>
       <div class="content">
         <mat-card-content>
-          <p>{{ truncateDescription(place.descripcion) }}</p>
+          <p>{{ truncateDescription(place.descripcion[0]) }}</p>
         </mat-card-content>
 
         <mat-card-actions>
-          <a href="detalle">Leer más</a>
+          <a href="detalle/{{place.id}}">Leer más</a>
           <span>
-            <p>{{ place.puntuacion }}</p>
-            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="grade"></mat-icon>
+            <span *ngIf="!place || place.puntuacion === 0">
+              <p>NV</p>
+              <mat-icon aria-hidden="false" aria-label="Star" class="star-empty">grade</mat-icon>
+            </span>
+
+            <span *ngIf="place && place.puntuacion > 0">
+              <p>{{ place.puntuacion }}</p>
+              <mat-icon aria-hidden="false" aria-label="Star" class="star-empty"
+                    *ngFor="let _ of [1,2,3,4,5]; let i = index"
+                        [ngClass]="{'star-filled': i < place.puntuacion}">
+                grade
+              </mat-icon>
+            </span>
+
           </span>
         </mat-card-actions>
       </div>

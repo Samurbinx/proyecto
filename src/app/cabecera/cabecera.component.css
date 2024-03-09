@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgba(153, 209, 209, 0.233); */
 }
 div {
     padding-top: 30px;
@@ -13,14 +12,14 @@ div {
 }
 
 h1 {
-    padding: 150px 0;
+    padding: 200px 0;
     margin: 0;
-    font-size: 300px;
+    font-size: 350px;
     font-weight: 900;
     color: transparent;
     background-clip: text;
     
-    background-image: url(../../assets/bg.jpg);
+    background-image: url(../../assets/bg2.jpg);
     background-position: center;
 }
 

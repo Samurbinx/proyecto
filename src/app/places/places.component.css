@@ -70,3 +70,10 @@ span > p {
   font-size: 20px;
 }
 
+.star-empty {
+  color: lightgray; /* Color de las estrellas vacías */
+} 
+
+.star-filled {
+color: gold; /* Color de las estrellas llenas */
+}

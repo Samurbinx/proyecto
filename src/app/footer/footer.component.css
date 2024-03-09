@@ -1,5 +1,4 @@
 mat-toolbar{
-    background-color: rgba(19, 67, 107, 0.801);
     display: flex;
     flex-direction: row;
     justify-content: space-between;

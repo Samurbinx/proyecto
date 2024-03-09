@@ -27,6 +27,18 @@ export class UserService {
     return this._http.get<UserModel[]>(`${this.URL_API}/users/${id}`);
   }
 
+  getAllUsers(): Observable<UserModel[]> {
+    return this._http.get<UserModel[]>(`${this.URL_API}/users`);
+  }
+
+  
+  getUserByName(nombre: string): Observable<UserModel | undefined> {
+    return this.getAllUsers().pipe(
+      map(users => users.find(user => user.nombre === nombre))
+    );
+  }
+
+
   deleteUser(id: number): Observable<any> {
     return this._http.delete(`${this.URL_API}/users/${id}`);
   }

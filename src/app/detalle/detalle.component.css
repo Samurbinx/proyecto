@@ -1,0 +1,102 @@
+.body {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.content {
+    width: 100%;
+    padding: 100px;
+}
+.cabecera > h1 {
+    font-size: 100px;
+    padding-bottom: 60px;
+}
+.cuerpo {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.desc {
+    width: 50%;
+}
+.desc > h2 {
+    margin-top: 30px;
+}
+
+.imagenes {
+    width: 40%;
+    height: 100%;
+}
+
+mat-grid-tile {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: none;
+} 
+
+.pts {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.pts > span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.pts > span > p {
+    padding: 0;
+    margin: 0 10px 0 0;
+    font-size: 20px;
+}
+
+
+.cuerpo2 {
+    width: 100%;
+    margin: 30px auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.opiniones{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.op {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.review {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 30%;
+}
+.review > span > mat-icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.review > mat-form-field {
+    width: 100%;
+}
+  
+
+.star-empty {
+    color: lightgray; /* Color de las estrellas vacías */
+}
+  
+.star-filled {
+color: gold; /* Color de las estrellas llenas */
+}
