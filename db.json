@@ -26,9 +26,9 @@
       "nombre": "prueba",
       "apellidos": "prueba",
       "telefono": "592387543",
-      "pwd": "PRUEBA",
+      "pwd": "prueba",
       "role": "usuario",
-      "token": "pwd"
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJwcnVlYmEiLCJlbWFpbCI6InBydWViYUBnbWFpbC5jb20iLCJwd2QiOiJwcnVlYmEiLCJyb2xlIjoidXN1YXJpbyJ9.9i9RTNx_o1qbyqoL-2G56W206r5iNsyluFnQP2Di32E"
     }
   ],
   "places": [
@@ -37,9 +37,9 @@
       "nombre": "Torre de Hércules",
       "descripcion": [
         "La Torre de Hércules es una torre y faro situado sobre una colina en la península de la ciudad de La Coruña, en Galicia (España). Su altura total es de 55 metros. Data de finales del siglo i y principios del siglo ii. Tiene el privilegio de ser el único faro romano y el más antiguo en funcionamiento del mundo. Es el tercer faro en altura de España, por detrás del faro de Chipiona (62 m s. n. m.) y del faro de Maspalomas (60 m s. n. m.). El 27 de junio de 2009 fue declarado Patrimonio de la Humanidad por la Unesco. Hasta el siglo xx recibía el nombre de Faro de Brigantia, o en latín Farum Brigantium.",
-        "El origen de la torre es desconocido, aunque fue reedificada por los romanos en el s. i d. C. La Torre de Hércules fue construida como faro de navegación y comprendida la construcción entre los reinados de Nerón y Vespasiano en función de los hallazgos de fragmentos de terra sigillata y vasos de paredes finas datables entre los años 40 y 80 de nuestra era[cita requerida]. La inscripción al pie de la torre y las referencias documentales sobre la ciudad de Brigantium (La Coruña) revelan la existencia de un faro de la época de Trajano. En su base se encontró una piedra votiva con la inscripción en latín MARTI AVG.SACR C.SEVIVS LVPVS ARCHTECTVS ÆMINIENSIS LVSITANVS.EX.VO, lo que ha permitido identificar al arquitecto autor de la misma como Cayo Sevio Lupo, originario de Aeminium, hoy Coímbra, en Portugal. La mención más antigua a la Torre se encuentra en el Historiæ adversvm Paganos de Paulo Orosio, escrito hacia el 415-417 d. C., que dice: Secvndvs angvlvs circivm intendit, ubi Brigantia Gallæciæ civitas sita altissimvm farvm et inter pavca memorandi operis ad specvlam Britanniæ erigit («En el segundo ángulo del curso [de circunnavegación de Hispania], donde se sitúa la ciudad galaica de Brigantia, se yergue un faro altísimo, una de las pocas obras dignas de recuerdo en la ruta hacia Britania»). Una de las representaciones más antiguas conocidas es la del mapamundi del Beato del Burgo de Osma7​, del año 1086. La torre perdió, posiblemente, su uso marítimo durante la Edad Media al convertirse en fortificación. En el siglo xvii (1682) el duque de Uceda encargó la restauración arquitectónica al arquitecto Amaro Antune, que construyó una escalera de madera que atravesaba las bóvedas hasta la parte superior, donde se sitúan dos pequeñas torres para soportar los fanales. En el reinado de Carlos III se realizó la reconstrucción completa. La obra neoclásica se terminó en 1791 bajo la dirección de Eustaquio Giannini."
+        "El origen de la torre es desconocido, aunque fue reedificada por los romanos en el s. i d. C. La Torre de Hércules fue construida como faro de navegación y comprendida la construcción entre los reinados de Nerón y Vespasiano en función de los hallazgos de fragmentos de terra sigillata y vasos de paredes finas datables entre los años 40 y 80 de nuestra era[cita requerida]. La inscripción al pie de la torre y las referencias documentales sobre la ciudad de Brigantium (La Coruña) revelan la existencia de un faro de la época de Trajano. En su base se encontró una piedra votiva con la inscripción en latín MARTI AVG.SACR C.SEVIVS LVPVS ARCHTECTVS ÆMINIENSIS LVSITANVS.EX.VO, lo que ha permitido identificar al arquitecto autor de la misma como Cayo Sevio Lupo, originario de Aeminium, hoy Coímbra, en Portugal. La mención más antigua a la Torre se encuentra en el Historiæ adversvm Paganos de Paulo Orosio, escrito hacia el 415-417 d. C., que dice: Secvndvs angvlvs circivm intendit, ubi Brigantia Gallæciæ civitas sita altissimvm farvm et inter pavca memorandi operis ad specvlam Britanniæ erigit («En el segundo ángulo del curso [de circunnavegación de Hispania], donde se sitúa la ciudad galaica de Brigantia, se yergue un faro altísimo, una de las pocas obras dignas de recuerdo en la ruta hacia Britania»). Una de las representaciones más antiguas conocidas es la del mapamundi del Beato del Burgo de Osma, del año 1086. La torre perdió, posiblemente, su uso marítimo durante la Edad Media al convertirse en fortificación. En el siglo xvii (1682) el duque de Uceda encargó la restauración arquitectónica al arquitecto Amaro Antune, que construyó una escalera de madera que atravesaba las bóvedas hasta la parte superior, donde se sitúan dos pequeñas torres para soportar los fanales. En el reinado de Carlos III se realizó la reconstrucción completa. La obra neoclásica se terminó en 1791 bajo la dirección de Eustaquio Giannini."
       ],
-      "puntuacion": 4,
+      "puntuacion": 3.7,
       "imagenes": [
         "/assets/places/torre/1.jpg",
         "/assets/places/torre/2.jpg",
@@ -50,8 +50,8 @@
       "id": "1",
       "nombre": "Aquarium Finisterrae",
       "descripcion": [
-        "La Torre de Hércules es una torre y faro situado sobre una colina en la península de la ciudad de La Coruña, en Galicia (España). Su altura total es de 55 metros. Data de finales del siglo i y principios del siglo ii. Tiene el privilegio de ser el único faro romano y el más antiguo en funcionamiento del mundo. Es el tercer faro en altura de España, por detrás del faro de Chipiona (62 m s. n. m.) y del faro de Maspalomas (60 m s. n. m.). El 27 de junio de 2009 fue declarado Patrimonio de la Humanidad por la Unesco. Hasta el siglo xx recibía el nombre de Faro de Brigantia, o en latín Farum Brigantium.",
-        "El origen de la torre es desconocido, aunque fue reedificada por los romanos en el s. i d. C. La Torre de Hércules fue construida como faro de navegación y comprendida la construcción entre los reinados de Nerón y Vespasiano en función de los hallazgos de fragmentos de terra sigillata y vasos de paredes finas datables entre los años 40 y 80 de nuestra era[cita requerida]. La inscripción al pie de la torre y las referencias documentales sobre la ciudad de Brigantium (La Coruña) revelan la existencia de un faro de la época de Trajano. En su base se encontró una piedra votiva con la inscripción en latín MARTI AVG.SACR C.SEVIVS LVPVS ARCHTECTVS ÆMINIENSIS LVSITANVS.EX.VO, lo que ha permitido identificar al arquitecto autor de la misma como Cayo Sevio Lupo, originario de Aeminium, hoy Coímbra, en Portugal. La mención más antigua a la Torre se encuentra en el Historiæ adversvm Paganos de Paulo Orosio, escrito hacia el 415-417 d. C., que dice: Secvndvs angvlvs circivm intendit, ubi Brigantia Gallæciæ civitas sita altissimvm farvm et inter pavca memorandi operis ad specvlam Britanniæ erigit («En el segundo ángulo del curso [de circunnavegación de Hispania], donde se sitúa la ciudad galaica de Brigantia, se yergue un faro altísimo, una de las pocas obras dignas de recuerdo en la ruta hacia Britania»). Una de las representaciones más antiguas conocidas es la del mapamundi del Beato del Burgo de Osma7​, del año 1086. La torre perdió, posiblemente, su uso marítimo durante la Edad Media al convertirse en fortificación. En el siglo xvii (1682) el duque de Uceda encargó la restauración arquitectónica al arquitecto Amaro Antune, que construyó una escalera de madera que atravesaba las bóvedas hasta la parte superior, donde se sitúan dos pequeñas torres para soportar los fanales. En el reinado de Carlos III se realizó la reconstrucción completa. La obra neoclásica se terminó en 1791 bajo la dirección de Eustaquio Giannini."
+        "El Aquarium Finisterrae, llamado popularmente Casa de los Peces (en gallego, Casa dos Peixes), es un centro interactivo situado en la ciudad de La Coruña (Galicia, España) dedicado a la divulgación científica sobre aspectos relacionados con la biología marina, la oceanografía y el mar en general. Pretende promover el conocimiento del océano y educar en actitudes positivas hacia el medio acuático, así como contribuir al conocimiento científico de la vida marina.Está ubicado en la costa coruñesa, en el Paseo Marítimo, entre la Domus y la Torre de Hércules, que puede verse desde el acuario. Sus piscinas exteriores están conectadas con el Océano Atlántico y están diseñadas con un sistema que las hace sensibles a las mareas. Además de sus piscinas y acuarios, contiene varios módulos interactivos. Desde su apertura en 1999, ha recibido más de 6 millones de visitantes.",
+        "Creado por el Ayuntamiento de La Coruña, cuando era alcalde Francisco Vázquez Vázquez, fue inaugurado el 5 de junio de 1999 a partir de un proyecto museológico original de Ramón Núñez Centella, quien fue su primer director hasta 2008. En 2003 hubo un intento del director de convertirlo en un museo nacional, pero sigue siendo de carácter municipal y está dentro de los Museos Científicos Coruñeses, junto con la Domus y la Casa de las Ciencias. Su director técnico fue Francisco Franco del Amo hasta su fallecimiento en 2021. desde entonces, el puesto lo ocupa Francisco Armesto. A causa de la localización del acuario en la costa, estuvo expuesto a alguno de los temporales que azotaron la ciudad. Tras el accidente del petrolero monocasco Prestige el 13 de noviembre de 2002, se produjo una marea negra que afectó al Aquarium Finisterrae, que capta el agua para la mayoría de sus tanques directamente del mar. Afectó a las focas, que empezaron a permanecer fuera del agua más tiempo de lo habitual. Para evitar futuras entradas de hidrocarburos (debido a la frecuencia de accidentes de este tipo en costas gallegas), y teniendo en cuenta que estos contaminantes afectan sobre todo a la superficie del océano, se construyó un nuevo túnel de captación de aguas a 17 metros de profundidad. La pandemia de COVID-19 paralizó muchas de las actividades del museo, que temporalmente dejó de recibir centros educativos, aunque se retomó en 2021.16"
       ],
       "puntuacion": 0,
       "imagenes": [
@@ -63,7 +63,10 @@
     {
       "id": "2",
       "nombre": "Monte de San Pedro",
-      "descripcion": "Este parque era antiguamente un punto defensivo reconvertido para el disfrute de los ciudadanos y turistas desde el año 1999. Cuenta con una extensión de más de 90.000 metros cuadrados en el que se pueden realizar todo tipo de hobbies. Podrás desde volar una cometa hasta tumbarte en la hierba o contemplar el atardecer. Además, cuenta con un gran aliciente turístico que son las dos piezas Vickers de más de 17 metros de altitud que fueron adquiridas en 1929 e instaladas en 1933.",
+      "descripcion": [
+        "Este parque era antiguamente un punto defensivo reconvertido para el disfrute de los ciudadanos y turistas desde el año 1999. Cuenta con una extensión de más de 90.000 metros cuadrados en el que se pueden realizar todo tipo de hobbies. Podrás desde volar una cometa hasta tumbarte en la hierba o contemplar el atardecer. Además, cuenta con un gran aliciente turístico que son las dos piezas Vickers de más de 17 metros de altitud que fueron adquiridas en 1929 e instaladas en 1933.",
+        "Fue inaugurado el 6 de junio de 1999 tras el cambio de uso del terreno en el que se encuentra. Antes era un espacio militar defensivo situado en un punto geográfico estratégico, orientado a la entrada de la ría coruñesa. Este antiguo carácter militar lo podemos apreciar en restos de construcciones que suponen un gran atractivo, como refugios subterráneos, barracones para la tropa, garitas y, sobre todo, las espectaculares baterías de costa. En el parque también podemos encontrar un laberinto inglés confeccionado con plantas italianas, un estanque con patos, una sala en la que se exhiben piezas militares y varias zonas de juegos infantiles. El observatorio: un edificio acabado en cúpula semiesférica que sirve como mirador. De especial presencia es el borde litoral, con sus características formaciones rocosas, flora y fauna. Laderas de toxos y brezos, de colores amarillos y rosas, en las que se entremezclan otras especies vegetales típicas de ambientes costeros, incluyendo algunas plantas endémicas que prosperan ante el respeto a su hábitat. Y sobre ellas, multitud de pequeñas aves como currucas, jilgueros o pardillos que surcan el parque, aportando colorido y vida.El parque de Bens fue inaugurado el 5 de junio de 2001 sobre el antiguo vertedero de la ciudad, que se había derrumbado en 1996 causando la muerte de un vecino de O Portiño."
+      ],
       "puntuacion": 0,
       "imagenes": [
         "../../assets/places/monte/1.jpg",
@@ -74,8 +77,11 @@
     {
       "id": "3",
       "nombre": "Museo Domus",
-      "descripcion": "La Domus, anteriormente conocida como Casa del Hombre, es un museo de carácter científico ubicado en el paseo marítimo de la ciudad de La Coruña (Galicia, España). Es el primer museo interactivo que trata de una forma global y monográfica el ser humano. Fue inaugurado el 7 de abril de 1995,1 siendo alcalde Francisco Vázquez, y forma parte de la institución municipal Museos Científicos Coruñeses a la que también pertenecen la Casa de las Ciencias y el Aquarium Finisterrae.",
-      "puntuacion": 4,
+      "descripcion": [
+        "La Domus, anteriormente conocida como Casa del Hombre, es un museo de carácter científico ubicado en el paseo marítimo de la ciudad de La Coruña (Galicia, España). Es el primer museo interactivo que trata de una forma global y monográfica el ser humano. Fue inaugurado el 7 de abril de 1995,1 siendo alcalde Francisco Vázquez, y forma parte de la institución municipal Museos Científicos Coruñeses a la que también pertenecen la Casa de las Ciencias y el Aquarium Finisterrae.",
+        "El museo, ideado por Ramón Núñez Centella y dirigido por él desde su creación hasta 2008, pretende divertir al visitante, estimular su curiosidad y suscitar la reflexión acerca de las características de la especie humana mediante la interactividad y la interdisciplinaridad. Su directora técnica es Patricia Barciela. Su lema es Conócete a ti mismo, frase que figuraba en el Templo de Apolo en Delfos y que Platón atribuye a los Siete Sabios de Grecia. El edificio, obra del arquitecto japonés Arata Isozaki y César Portela, cuenta con muros, paredes y escalinata de granito. La fachada que da al paseo marítimo se curva como la vela de un barco al viento ofreciendo dicha imagen a la ciudad. Además, cuenta con un revestimiento de 6.600 piezas de pizarra de unas canteras en Galicia entre las provincias de Lugo y Ourense, que se sostienen con casi 160.000 tornillos ajustados manualmente; la exposición del edificio a los continuos temporales que azotan la ciudad cada invierno provocó que, en 2022, cayesen algunos de los elementos de su fachada. Para el encaje del edificio en la cantera donde se ubica, hubieron de ser excavadas más de 30.000 toneladas de piedra. El museo cuenta con 1500 m² dedicados a exposiciones, repartidas en casi 200 módulos. Su mayor parte son interactivos, debiendo ser accionado algún mecanismo para entender sus contenidos."
+      ],
+      "puntuacion": 0,
       "imagenes": [
         "../../assets/places/domus/1.png",
         "../../assets/places/domus/2.jpg",
@@ -85,7 +91,10 @@
     {
       "id": "4",
       "nombre": "Castelo de Santo Antón",
-      "descripcion": "El castillo de San Antón es un castillo del siglo xvi que formó parte, junto con el Castillo de Santa Cruz y el Castillo de San Diego, de una red estratégica de castillos y baterías para defender la ciudad de La Coruña, en la comunidad autónoma de Galicia, España. Fue declarado Monumento Histórico Artístico en 1949 y desde 1994 ha pasado a ser considerado como un Bien de Interés Cultural con categoría de Monumento.Desde su inauguración en 1968, alberga el Museo Arqueológico e Histórico de La Coruña.2​",
+      "descripcion": [
+        "El castillo de San Antón es un castillo del siglo xvi que formó parte, junto con el Castillo de Santa Cruz y el Castillo de San Diego, de una red estratégica de castillos y baterías para defender la ciudad de La Coruña, en la comunidad autónoma de Galicia, España. Fue declarado Monumento Histórico Artístico en 1949 y desde 1994 ha pasado a ser considerado como un Bien de Interés Cultural con categoría de Monumento.Desde su inauguración en 1968, alberga el Museo Arqueológico e Histórico de La Coruña.",
+        "Fue edificada esta antigua fortaleza en el que era entonces un pequeño islote en medio de la bahía coruñesa, en el que se encontraba una pequeña ermita dedicada a San Antón. Su propósito era defender la ciudad de los ataques desde el mar. Su construcción comenzó el año 1587, según indica una inscripción en la portada de la fortaleza. Durante el ataque inglés de 1589 por parte de la Armada Inglesa, el castillo contribuyó con eficacia a la defensa de la ciudad, a pesar de estar inacabado. Tras el ataque, se continuó su construcción hasta la finalización de las obras en 1590. A partir del siglo xviii la fortaleza se convirtió en prisión, función que mantendría hasta su cesión al Ayuntamiento de La Coruña en 1960."
+      ],
       "puntuacion": 0,
       "imagenes": [
         "../../assets/places/castelo/1.jpg",
@@ -96,7 +105,10 @@
     {
       "id": "5",
       "nombre": "Museo Nacional de Ciencia e Tecnología",
-      "descripcion": "El Museo Nacional de Ciencia y Tecnología (MUNCYT) es una red museística española dedicada a la divulgación científica y tecnológica y a la conservación. Posee una colección de más de 15000 instrumentos científicos que datan desde el siglo xvi hasta la actualidad. Depende del Ministerio de Ciencia, Innovación y Universidades, a través de la Secretaría General de Investigación, y está gestionada por la Fundación Española para la Ciencia y la Tecnología (FECYT). Forma parte de la Red de Museos de España y la Red de Museos de Ciencia, Tecnología e Innovación; además, es miembro de la European Network os Science Centres and Museums.",
+      "descripcion": [
+        "El Museo Nacional de Ciencia y Tecnología (MUNCYT) es una red museística española dedicada a la divulgación científica y tecnológica y a la conservación. Posee una colección de más de 15000 instrumentos científicos que datan desde el siglo xvi hasta la actualidad. Depende del Ministerio de Ciencia, Innovación y Universidades, a través de la Secretaría General de Investigación, y está gestionada por la Fundación Española para la Ciencia y la Tecnología (FECYT). Forma parte de la Red de Museos de España y la Red de Museos de Ciencia, Tecnología e Innovación; además, es miembro de la European Network os Science Centres and Museums.",
+        "La idea de crear un museo dedicado a la ciencia y tecnología en España surgió a mediados del siglo xx, cuando en 1962 se forma la Comisión para la creación de un Museo de Ciencia y La Técnica. Este proyecto no tuvo continuidad, siendo recuperado hacia 1972 a través de informes sobre otros museos de ciencia y tecnología ya existentes en Europa y Estados Unidos; la primera iniciativa formal para su creación se dio en 1975 por medio del Instituto Nacional de Industria. Sin embargo, el proyecto no logró avanzar debido al fin de la dictadura franquista y los cambios derivados de la transición al sistema democrático. En noviembre de 1979 comenzaron a darse los primeros pasos mediante la constitución del patronato para la creación del Museo Nacional de la Ciencia y la Tecnología, y varios meses después, en marzo de 1980, el patronato llegó a un acuerdo con RENFE para la recuperación de la estación de Delicias, con el fin de convertirla en un espacio que albergaría las sedes del Museo de Ciencia y Tecnología (zona de estación de mercancías) y el Museo del Ferrocarril (zona de estación de pasajeros). Finalmente, en junio de ese mismo año, se creó formalmente el Museo Nacional de la Ciencia y la Tecnología, dependiente del Ministerio de Cultura, que abrió sus puertas al público en 1997 con la exposición Abriendo las puertas de la ciencia"
+      ],
       "puntuacion": 0,
       "imagenes": [
         "../../assets/places/muncyt/1.jpg",
@@ -107,8 +119,11 @@
     {
       "id": "6",
       "nombre": "Praza de María Pita",
-      "descripcion": "Plaza céntrica de la ciudad de A Coruña, dedicada a la heroína María Pita, proyectada a mediados del siglo XIX y donde se encuentra el Ayuntamiento.Forma un gran rectángulo de más de 10.000 metros cuadrados, en uno de cuyos frentes se encuentra el Palacio Municipial, mientras que en el resto se alinean edificios porticados, bajo los cuales se encuentran diversos establecimientos.",
-      "puntuacion": 2,
+      "descripcion": [
+        "Plaza céntrica de la ciudad de A Coruña, dedicada a la heroína María Pita, proyectada a mediados del siglo XIX y donde se encuentra el Ayuntamiento.Forma un gran rectángulo de más de 10.000 metros cuadrados, en uno de cuyos frentes se encuentra el Palacio Municipial, mientras que en el resto se alinean edificios porticados, bajo los cuales se encuentran diversos establecimientos.",
+        "La plaza fue proyectada por el arquitecto Juan de Ciórraga en 1877 tras el derrumbamiento de la muralla con el fin de resolver el paso de la ciudad vieja a la Pescadería. El recinto fue pavimentado en 1936 y asfaltado en la década de 1950 durante el mandato como alcalde de Alfonso Molina. En la década siguiente se permitió el estacionamiento, que no se suprimió hasta 1987, con la construcción del aparcamiento subterráneo y el túnel que implicó la peatonalización. Antiguamente recibió el nombre de plaza de Alesón, Libertad y Derribo. La plaza forma un gran rectángulo de más de 10 000 m². En una de sus frentes se encuentra el palacio del ayuntamiento, rodeado por las otras tres partes por edificios porticados y culminados con unas espléndidas galerías, típicas de la arquitectura gallega. El contorno se completa con la estatua a María Pita, que preside la plaza mirando hacia la casa consistorial. Su realización y colocación en la plaza tuvo lugar en 1998. Bajo los soportales de los edificios se encuentran diferentes locales de hostelería como bares, cafeterías y restaurantes. En el exterior de estos soportales existen desde 2002 unas terrazas cerradas y acristaladas para la utilización de estos locales que levantaron mucha polémica en su colocación por el impacto estético que supone su presencia para el contorno monumental de la plaza."
+      ],
+      "puntuacion": 0,
       "imagenes": [
         "../../assets/places/praza/1.png",
         "../../assets/places/praza/2.jpg",
@@ -118,8 +133,11 @@
     {
       "id": "7",
       "nombre": "Museo de Bellas Artes",
-      "descripcion": "El Museo de Bellas Artes de La Coruña (oficialmente y en gallego: Museo de Belas Artes da Coruña) es un museo de Bellas Artes localizado en la ciudad de La Coruña que tiene su sede en un moderno edificio de Manuel Gallego Jorreto que recupera parte del antiguo convento de las Capuchinas.",
-      "puntuacion": 1,
+      "descripcion": [
+        "El Museo de Bellas Artes de La Coruña (oficialmente y en gallego: Museo de Belas Artes da Coruña) es un museo de Bellas Artes localizado en la ciudad de La Coruña que tiene su sede en un moderno edificio de Manuel Gallego Jorreto que recupera parte del antiguo convento de las Capuchinas.",
+        "En 1922 se funda oficialmente el Museo Provincial de Bellas Artes de La Coruña, aunque sin un emplazamiento fijo y dando inicio a la adquisición de las primeras obras la colección del museo. En 1938 se cede parte del edificio del Consulado del Mar para albergar la colección del Museo, compartiendo el edificio con la Real Academia de Bellas Artes y la Biblioteca del Consulado. Hasta 1947 no se abren las puertas del museo. En el edificio del Consulado la colección fue creciendo por donaciones, depósitos y adquisiciones. En los años ochenta, el museo es catalogado como Museo de titularidad estatal, y comienza a recibir un presupuesto regular del Ministerio de Cultura. En 1989 la gestión del museo fue asumida por la Junta de Galicia. En 1995 se inauguró una nueva sede en el antiguo convento de las Capuchinas —en parte recuperado—, diseñada por arquitecto Manuel Gallego Jorreto, que consiguió el premio Nacional de Arquitectura de España de 1997. Presenta numerosas obras procedentes del Museo del Prado y del Museo Reina Sofía, pintura española y europea de los siglos XVI al XX, y pintura gallega del XIX y del XX. Tiene expuesto también una amplia colección de grabados de Goya y piezas de cerámica de Sargadelos."
+      ],
+      "puntuacion": 0,
       "imagenes": [
         "../../assets/places/bella/1.jpg",
         "../../assets/places/bella/2.jpg",
@@ -129,7 +147,10 @@
     {
       "id": "8",
       "nombre": "Praia de Riazor",
-      "descripcion": "La playa de Riazor es una playa urbana de la ciudad de La Coruña (Galicia, España), situada en la Ensenada del Orzán. Cuenta con la Bandera Azul, distinción otorgada a las playas con las mejores condiciones ambientales e instalaciones. Su continuación hacia el noreste es la playa del Orzán. Está en frente del hotel Riazor.",
+      "descripcion": [
+        "La playa de Riazor es una playa urbana de la ciudad de La Coruña (Galicia, España), situada en la Ensenada del Orzán. Cuenta con la Bandera Azul, distinción otorgada a las playas con las mejores condiciones ambientales e instalaciones. Su continuación hacia el noreste es la playa del Orzán. Está en frente del hotel Riazor.",
+        "No se ha encontrado historia sobre este sitio."
+      ],
       "puntuacion": 0,
       "imagenes": [
         "../../assets/places/praia/1.jpg",
@@ -140,81 +161,25 @@
   ],
   "review": [
     {
-      "id": "3721",
-      "userEmail": "alejandra@gmail.com",
-      "idPlace": "0",
-      "puntos": 1,
-      "descripcion": "fds"
-    },
-    {
-      "id": "3a51",
+      "id": "97da",
       "userEmail": "alejandra@gmail.com",
       "idPlace": "0",
       "puntos": 4,
-      "descripcion": "sad"
+      "descripcion": "Me ha encantado <3"
     },
     {
-      "id": "b392",
+      "id": "2724",
       "userEmail": "alejandra@gmail.com",
       "idPlace": "0",
-      "puntos": 1,
-      "descripcion": "dsa"
-    },
-    {
-      "id": "9c22",
-      "userEmail": "alejandra@gmail.com",
-      "idPlace": "1",
-      "puntos": 3,
-      "descripcion": "fds"
-    },
-    {
-      "id": "f5bf",
-      "userEmail": "alejandra@gmail.com",
-      "idPlace": "2",
-      "puntos": 1,
-      "descripcion": "asdfas"
-    },
-    {
-      "id": "f8a7",
-      "userEmail": "alejandra@gmail.com",
-      "idPlace": "3",
-      "puntos": 4,
-      "descripcion": "fsda"
-    },
-    {
-      "id": "2492",
-      "userEmail": "alejandra@gmail.com",
-      "idPlace": "3",
-      "puntos": 3,
-      "descripcion": "fasd"
-    },
-    {
-      "id": "2afb",
-      "userEmail": "alejandra@gmail.com",
-      "idPlace": "3",
-      "puntos": 4,
-      "descripcion": "gfd"
-    },
-    {
-      "id": "61cf",
-      "userEmail": "alejandra@gmail.com",
-      "idPlace": "6",
       "puntos": 2,
-      "descripcion": "dsa"
+      "descripcion": "a"
     },
     {
-      "id": "dcd8",
-      "userEmail": "alejandra@gmail.com",
-      "idPlace": "7",
-      "puntos": 1,
-      "descripcion": "das"
-    },
-    {
-      "id": "3a9e",
+      "id": "8cf1",
       "userEmail": "alejandra@gmail.com",
       "idPlace": "0",
-      "puntos": 4,
-      "descripcion": "me ha gustado mucho el sitio"
+      "puntos": 5,
+      "descripcion": "as"
     }
   ]
 }

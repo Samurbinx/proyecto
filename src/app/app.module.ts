@@ -37,6 +37,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CookieService } from 'ngx-cookie-service';
 import { CommonModule } from '@angular/common';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -52,6 +53,7 @@ import { CommonModule } from '@angular/common';
     HomeComponent,
     RegistroComponent,
     LoginComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,

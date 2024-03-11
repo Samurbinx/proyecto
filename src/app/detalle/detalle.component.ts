@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { PlaceModel } from '../models/place.model';
 import { PlaceService } from '../services/place.service';
 import { ActivatedRoute, UrlSegment } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { CookieService } from 'ngx-cookie-service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ReviewModel } from '../models/review.model';
@@ -21,7 +21,7 @@ export interface Tile {
   styleUrls: ['./detalle.component.css']
 })
 export class DetalleComponent {
-    place: PlaceModel | undefined;
+    place: PlaceModel;
     reviews: ReviewModel[] | undefined;
     id: string;
     firstname: any;
@@ -29,6 +29,8 @@ export class DetalleComponent {
     isAdmin: boolean | undefined;
     resenia: FormGroup;
     totalPuntos: number;
+	myreview: ReviewModel;
+	currentIndex = 0;
 
 
   tiles: Tile[] = [
@@ -46,6 +48,8 @@ export class DetalleComponent {
     ){
       this.id = "";
       this.totalPuntos = 0;
+	  this.myreview = new ReviewModel("","",0,"");
+	  this.place = new PlaceModel(0,"","",0,[]);
       this.resenia = this._fb.group ({
         puntuacion: new FormControl('', Validators.required),
         desc: new FormControl('', Validators.required)
@@ -53,33 +57,47 @@ export class DetalleComponent {
 
   }
   
-  ngOnInit(): void {
+ngOnInit(): void {
     const idParam = this.route.snapshot.paramMap.get('id');
     this.id = idParam !== null ? idParam : '';
     if (idParam == null) {
-      this.id = "";
+        this.id = "";
     } else {
-      this._placeService.getPlace(parseInt(idParam)).subscribe(
-        (data: PlaceModel) => {
-          this.place = data;
+        this._placeService.getPlace(parseInt(idParam)).subscribe(
+            (data: PlaceModel) => {
+                this.place = data;
+            },
+            (error) => {
+                console.log("Error fetching place details");
+            }
+        );
 
-        },
-        (error) => {
-          console.log("Error");
-        }
-      );
-
-      this._placeService.getPlaceReviews(idParam).subscribe(
-        (data: ReviewModel[]) => {
-          this.reviews = data;
-          this.totalPuntos = this.getTotalPuntos();
-        },
-        (error) => {
-          console.log("Error");
-        }
-      )
+        this._placeService.getPlaceReviews(idParam).subscribe(
+            (data: ReviewModel[]) => {
+                this.reviews = data;
+                // Update total points after fetching reviews
+                this.totalPuntos = this.getTotalPuntos();
+                // Update place with total points
+                if (this.place) {
+                    this.place.puntuacion = this.totalPuntos;
+                    this._placeService.editPlace(this.place.id, this.place).subscribe(
+                        (updatedPlace: PlaceModel) => {
+                            
+                        },
+                        (error) => {
+                            console.log("Error updating place with total points");
+                        }
+                    );
+                }
+            },
+            (error) => {
+                console.log("Error fetching reviews");
+            }
+        );
     }
-  }
+}
+
+
 
   getLoggedFirstName(): boolean {
     let token: string = this._cookieService.get('token');  
@@ -97,51 +115,48 @@ export class DetalleComponent {
       return true;
     }
   }
-  
-  publicar(): boolean {
+
+publicar(): boolean {
     var user: UserModel;
     if (this.resenia.valid) {
-      this._userService.getUserByName(this.firstname).subscribe({
-        next: (result : UserModel | undefined) => {
-          if (result) {
-            user = result;
-            
-  
-            let review: ReviewModel = new ReviewModel(
-              user.email,
-              this.id,
-              this.resenia.value.puntuacion,
-              this.resenia.value.desc
-            )
-  
-            this._placeService.addReview(review).subscribe({
-              next: (place: ReviewModel | undefined) => {
-                if (place) {
-                  this._placeService.editPlacePoints(parseInt(place.idPlace),place.puntos).subscribe({
-                    next: (result : PlaceModel | undefined) => {
-                      if (result) {
-                        window.location.reload();
+        this._userService.getUserByName(this.firstname).subscribe({
+            next: (result: UserModel | undefined) => {
+                if (result) {
+                    user = result;
 
-                      } else {
-                        console.log("error");
-                      }
-                    }
-                  });
+                    let review: ReviewModel = new ReviewModel(
+                        user.email,
+                        this.id,
+                        this.resenia.value.puntuacion,
+                        this.resenia.value.desc
+                    )
+
+                    this._placeService.addReview(review).subscribe({
+                        next: (place: ReviewModel | undefined) => {
+                            if (place) {
+                                
+                                this._placeService.getPlaceReviews(this.id).subscribe(
+                                    (data: ReviewModel[]) => {
+                                        this.reviews = data;
+                                        this.totalPuntos = this.getTotalPuntos();
+										window.location.reload();
+                                    },
+                                    (error) => {
+                                        console.log("Error");
+                                    }
+                                );
+                            }
+                        }
+                    })
                 }
             }
-          })
-            
-  
-          }
-        }
-      })
-      return true;
-
+        });
+        return true;
     } else {
-      return false;
+        return false;
     }
-    
-  }
+}
+
 
   getTotalPuntos(){
     let totalPuntos = 0;
@@ -154,31 +169,52 @@ export class DetalleComponent {
     return 0;
   }
  
-
-//   hasReview(){
-//     var user: UserModel;
-//     var email: string;
+//   hasReview(): any {
+//       if (this.reviews && this.reviews.length == 0) {
+// 			return false;
+//       } else {
 //         this._userService.getUserByName(this.firstname).subscribe({
 //           next: (result : UserModel | undefined) => {
 //             if (result) {
-//               user = result;
-//               email = user.email;
+//               const email = result.email;
+//               if (this.reviews && email) {
+//                 for (let review of this.reviews){
+// 					if (review.userEmail == email) {
+// 						return true;
+// 					}
+// 				}
+//               }
+// 			  return false;
+//             } else {
+//              return false;
 //             }
-//           }  
-//         })
-
-//     if (this.reviews != undefined && this.email != null) {
-// 		    let flag = false;
-//       	this.reviews.forEach(review => {
-// 			console.log(review.userEmail);
-//           if (review.userEmail == email) {
-//             flag = true;
+//           },
+//           error: (err) => {
+// 			  return false;
 //           }
-//         });  
-// 		return flag;
-//     }
-// 	return false;
-    
-//   }
+//         });
+//       }
+//     };
   
+// 	myReview(): any {
+// 		this._userService.getUserByName(this.firstname).pipe(
+// 			map((result: UserModel | undefined) => {
+// 				if (result) {
+// 					const email = result.email;
+// 					if (email && this.reviews) {
+// 						let find = this.reviews.find(review => review.userEmail === email);
+// 						if (find) {
+// 							this.myreview = find;
+// 							return this.myreview;
+
+// 						}
+// 					}
+// 					return false;
+// 				}
+// 				return false;
+// 			})
+// 		);
+// 	}
+
+
 }

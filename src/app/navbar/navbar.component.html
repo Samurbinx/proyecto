@@ -7,7 +7,7 @@
   </span>
     <div>
       <button *ngIf="!getLoggedFirstName()" mat-stroked-button class="menuButton1" routerLink="/registro">Registro</button>
-      <button *ngIf="isAdmin" mat-flat-button routerLink="users" class="menuButton2" color="accent" routerLink="users">Administrar lugares</button>
+      <button *ngIf="isAdmin" mat-flat-button routerLink="users" class="menuButton2" color="accent" routerLink="admin">Administrar lugares</button>
 
       <button *ngIf="getLoggedFirstName()" mat-flat-button class="menuButton1" (click)="logout()">Salir ({{ firstname }})</button>
       <button *ngIf="!getLoggedFirstName()" mat-raised-button class="menuButton2" routerLink="/login">Entrar</button>

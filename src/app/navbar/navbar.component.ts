@@ -44,6 +44,7 @@ export class NavbarComponent implements OnInit{
     this._cookieService.delete('token',"/");   
     this._sharedService.openSnackBar("La sesión se ha cerrado correctamente.");
     this.isAdmin = false;
+    window.location.reload();
   }
 
 }

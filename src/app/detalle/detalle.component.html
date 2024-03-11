@@ -16,6 +16,8 @@
                 </mat-grid-tile>
             </mat-grid-list>
 
+			
+
             <div class="pts">
 				<span *ngIf="!place || place.puntuacion === 0">
                     <p>NV</p>
@@ -51,7 +53,7 @@
 		</div>
 
 		<div *ngIf="getLoggedFirstName()">
-			<form *ngIf="getLoggedFirstName" [formGroup]="resenia" (ngSubmit)="publicar()" class="review">
+			<form [formGroup]="resenia" (ngSubmit)="publicar()" class="review">
 				<p><b>{{firstname}}</b></p>  
 
 				<mat-form-field>
@@ -72,6 +74,8 @@
 				</mat-form-field>
 				<button mat-fab extended color="primary" type="submit">Publicar</button>
 			</form>
+
+			
 		</div>
 
 		<div class="opiniones">
