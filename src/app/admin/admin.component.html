@@ -21,7 +21,7 @@
   </table>
 </div>
 
-<div class="form">
+<div class="form" *ngIf="!placeSelected">
   <form [formGroup]="addPlaceForm" *ngIf="!placeSelected"  (ngSubmit)="addPlace()" >
     <h3>Añadir lugar</h3>
       <mat-form-field>
@@ -44,7 +44,7 @@
   </form>
 </div>
 
-<div class="form">
+<div class="form" *ngIf="placeSelected">
     <form [formGroup]="adminForm" *ngIf="placeSelected"  (ngSubmit)="guardarDatos()" >
         <mat-form-field>
             <mat-label>Nombre</mat-label>

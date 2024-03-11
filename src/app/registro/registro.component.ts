@@ -43,7 +43,7 @@ export class RegistroComponent {
         });
       
       } else {
-        console.log("error falta cozas");
+        console.log("error");
       }
   }
 }

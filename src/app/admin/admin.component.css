@@ -1,6 +1,6 @@
 .body {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: 85vh;
 }
@@ -13,13 +13,12 @@
     display: flex;
     flex-direction: column;
 
-    padding: 50px 100px;
+    padding: 50px;
     width: 60%;
 }
 form {
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 .textarea {
     height: fit-content;
