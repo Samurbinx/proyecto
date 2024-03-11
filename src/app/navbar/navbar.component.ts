@@ -19,23 +19,21 @@ export class NavbarComponent implements OnInit{
     this.getLoggedFirstName();
   }
 
-  // Si hay token en una cooki, devuelve true y guarda el nombre de usuario. Si no, devuelve false
+  // Si hay token en una cookie, devuelve true y guarda el nombre de usuario. Si no, devuelve false
   getLoggedFirstName(): boolean {
-
     // Lee el token de la cookie y extrae el nombre de usuario
     let token: string = this._cookieService.get('token');  
     
-    if (!token)
-      return false;
-    else
-    {
-      let tokenPayload = JSON.parse(atob(token.split('.')[1]));
-      this.firstname = tokenPayload.nombre; 
+    if (!token){
+        return false;
+	} else {
+        let tokenPayload = JSON.parse(atob(token.split('.')[1]));
+        this.firstname = tokenPayload.nombre; 
 
-      if (tokenPayload.role === "administrador")
-        this.isAdmin = true;
-
-      return true;
+      	if (tokenPayload.role === "administrador"){
+        	this.isAdmin = true;
+		}
+      	return true;
     }
   }
 

@@ -2,6 +2,7 @@
   <div *ngIf="place" class="content">
     <div class="cabecera"><h1>{{ place.nombre }}</h1></div>
 
+	<!-- DETALLE DEL LUGAR -->
     <div class="cuerpo">
         <div class="desc">
             {{ place.descripcion[0] }}
@@ -44,7 +45,7 @@
 
     
     
-
+	<!-- RESEÑAS -->
     <div class="cuerpo2">
 		<div *ngIf="!getLoggedFirstName()">
 			<button mat-fab extended color="primary" routerLink="/login">

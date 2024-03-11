@@ -1,36 +1,36 @@
 
 
 <div class="body">
-  <mat-card class="card" *ngFor="let place of places">
-      <mat-card-header>
-        <mat-card-title>{{ place.nombre }}</mat-card-title>
-      </mat-card-header>
+  	<mat-card class="card" *ngFor="let place of places">
+      	<mat-card-header>
+        	<mat-card-title>{{ place.nombre }}</mat-card-title>
+      	</mat-card-header>
           
-      <div  style="background-image: url({{place.imagenes[0]}}) ;" class="img"></div>
-      <div class="content">
-        <mat-card-content>
-          <p>{{ truncateDescription(place.descripcion[0]) }}</p>
-        </mat-card-content>
+      	<div  style="background-image: url({{place.imagenes[0]}}) ;" class="img"></div>
 
-        <mat-card-actions>
-          <a href="detalle/{{place.id}}">Leer más</a>
-          <span>
-            <span *ngIf="!place || place.puntuacion === 0">
-              <p>NV</p>
-              <mat-icon aria-hidden="false" aria-label="Star" class="star-empty">grade</mat-icon>
-            </span>
+      	<div class="content">
+        	<mat-card-content>
+          		<p>{{ truncateDescription(place.descripcion[0]) }}</p>
+        	</mat-card-content>
 
-            <span *ngIf="place && place.puntuacion > 0">
-              <p>{{ place.puntuacion }}</p>
-              <mat-icon aria-hidden="false" aria-label="Star" class="star-empty"
-                    *ngFor="let _ of [1,2,3,4,5]; let i = index"
-                        [ngClass]="{'star-filled': i < place.puntuacion}">
-                grade
-              </mat-icon>
-            </span>
+        	<mat-card-actions>
+				<a href="detalle/{{place.id}}">Leer más</a>
+				<span>
+					<span *ngIf="!place || place.puntuacion === 0">
+						<p>NV</p>
+						<mat-icon aria-hidden="false" aria-label="Star" class="star-empty">grade</mat-icon>
+					</span>
 
-          </span>
-        </mat-card-actions>
+					<span *ngIf="place && place.puntuacion > 0">
+						<p>{{ place.puntuacion }}</p>
+						<mat-icon aria-hidden="false" aria-label="Star" class="star-empty"
+							*ngFor="let _ of [1,2,3,4,5]; let i = index"
+							[ngClass]="{'star-filled': i < place.puntuacion}">
+							grade
+						</mat-icon>
+					</span>
+				</span>
+			</mat-card-actions>
       </div>
   </mat-card>
 </div>
